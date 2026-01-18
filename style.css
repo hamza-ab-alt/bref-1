@@ -1,62 +1,70 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navigation */
-.navigation{
+body {
+  font-family: sans-serif;
+}
+
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
-.bar{
+.bar {
   display: flex;
   align-items: center;
 }
 
-.logo img{
+.logo img {
   width: 130px;
 }
 
-.soussrc{
+.soussrc {
   margin-top: -4px;
   margin-left: 5px;
   font-size: 13px;
-  font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.discover{
-  border: none;
+.discover {
+  border: 30px;
   margin-left: 20px;
   background: none;
 }
 
-.discover:hover{
+.discover:hover {
   background-color: rgb(230, 230, 230);
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;
+  background-size: 3000px;
 }
 
-/* Icons */
-.icons{
+.icons {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.icons img{
+.icons button {
+  border: none;
+  background: none;
+}
+
+.icons img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   cursor: pointer;
 }
 
-/* Hero */
-.slide{
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("caption.jpg");
+.slide {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("caption.jpg");
   height: 65vh;
   background-size: cover;
   background-position: center;
@@ -66,24 +74,23 @@
   margin-top: 10px;
 }
 
-.container{
+.slide .container {
   text-align: center;
   color: white;
   max-width: 600px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container h1{
+.container h1 {
   font-size: 40px;
 }
 
-.container p{
+.container p {
   font-size: 15px;
   margin-top: -10px;
 }
 
-/* Search */
-.search{
+.search {
   margin-top: -150px;
   background: white;
   border-radius: 50px;
@@ -92,10 +99,10 @@
   padding: 10px;
   width: 700px;
   max-width: 90%;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.search input{
+.search input {
   flex: 1;
   border: none;
   outline: none;
@@ -104,7 +111,7 @@
   border-right: 1px solid #eee;
 }
 
-.search button{
+.search button {
   border: none;
   background: #008053;
   color: white;
@@ -115,52 +122,692 @@
   font-size: 18px;
 }
 
-/* Why Viator */
-.why-viator{
+.why-viator {
   padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.why-viator h2 {
+  font-size: 36px;
+  padding-bottom: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
 }
 
-.why-viator h2{
-  font-size: 36px;
-  margin-bottom: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.parties{
+.parties {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 70px;
   flex-wrap: wrap;
 }
 
-.partie{
-  padding: 30px 20px;
-  border-radius: 12px;
-  width: 250px;
+.partie {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
-.partie i{
+.partie i {
   font-size: 20px;
-  margin-bottom: 15px;
-  width: 30px;
-  height: 30px;
-  padding-top: 7px;
-  background: #008053;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.partie h3{
+.fa-phone {
+  background-color: #f6c5cd;
+}
+
+.fa-parachute-box {
+  background-color: #ccf3ea;
+}
+
+.fa-star {
+  background-color: #f6ecbb;
+}
+
+.fa-calendar-days {
+  background-color: #deeced;
+}
+
+.partie h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.partie p{
+.partie p {
   font-size: 16px;
   color: #555;
   line-height: 1.5;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.end-section {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #7084b5;
+  position: relative;
+}
+
+.login-section {
+  background-color: #f7eeff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 10px;
+}
+
+.login-section span {
+  cursor: pointer;
+}
+
+.login-section button {
+  background-color: #333333;
+  border: none;
+  padding: 10px 20px;
+  width: 70%;
+  color: #deeced;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.end-section p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.top-destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 40px;
+  gap: 40px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  row-gap: 15px;
+}
+
+.images div {
+  border-radius: 5px;
+}
+
+.top-destinations h1 {
+  text-align: center;
+}
+
+.images .image1 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-LasVegas-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image2 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Rome-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+.images .image3 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Paris-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+.images .image4 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-London-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image5 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-NewYorkCity-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image6 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-WashingtonDC-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image7 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Cancun-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image8 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Florence-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image9 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Barcelona-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images .image10 {
+  background-image:
+    linear-gradient(to bottom, #0000007a, #00000083),
+    url("/brief1Photo/TopDestinations-Oahu-450px.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+}
+
+.images p {
+  color: #ccf3ea;
+  font-weight: bolder;
+}
+
+.images .image1:hover,
+.images .image2:hover,
+.images .image3:hover,
+.images .image4:hover,
+.images .image5:hover,
+.images .image6:hover,
+.images .image7:hover,
+.images .image8:hover,
+.images .image9:hover,
+.images .image10:hover {
+  filter: brightness(1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.keep-think {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ebfaf7;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.keep-think p {
+  text-align: center;
+}
+
+.top-attractions {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.top-attractions h2 {
+  margin: 40px 0;
+}
+
+.images-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+}
+
+.images-container img {
+  width: 100px;
+  border-radius: 5%;
+}
+
+.images-container .item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.images-container .item h5 {
+  display: block;
+}
+
+.images-container .item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.images-container .item p {
+  color: #444;
+}
+
+.top-tours {
+  width: 100%;
+}
+.top-tours h2 {
+  text-align: center;
+}
+
+.top-tours .container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-tours .container .item {
+  position: relative;
+  color: #333333;
+}
+.top-tours .container .item img {
+  width: 320px;
+  border-radius: 2%;
+}
+.top-tours .container .item .tag {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-tours .container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.top-tours .container .item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Free-cancellation {
+  padding: 100px;
+  background-color: #ebfaf7;
+}
+.Free-cancellation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Free-cancellation p {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .images div {
+    width: 180px;
+  }
+
+  .images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-tours .container {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bar {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .slide {
+    height: 50vh;
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .search {
+    width: 90%;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: -100px;
+  }
+
+  .search input {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
+
+  .search input:last-of-type {
+    border-bottom: none;
+  }
+
+  .parties {
+    gap: 40px;
+  }
+
+  .why-viator {
+    gap: 60px;
+    padding: 60px 20px;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .images div {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .images-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .images-container .item {
+    justify-content: center;
+  }
+
+  .top-tours .container .item img {
+    width: 280px;
+  }
+
+  .Free-cancellation {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .soussrc {
+    font-size: 11px;
+  }
+
+  .discover {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slide {
+    height: 40vh;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .search {
+    padding: 8px;
+    margin-top: -80px;
+  }
+
+  .search input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .search button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .why-viator h2 {
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+
+  .parties {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .partie {
+    max-width: 280px;
+  }
+
+  .login-section {
+    padding: 20px;
+  }
+
+  .login-section h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .login-section button {
+    width: 90%;
+  }
+
+  .top-destinations {
+    padding: 60px 20px;
+  }
+
+  .top-destinations h1 {
+    font-size: 24px;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  .images div {
+    width: 100%;
+    max-width: 300px;
+    height: 120px;
+  }
+
+  .keep-think h2 {
+    font-size: 22px;
+  }
+
+  .keep-think p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .keep-think p br {
+    display: none;
+  }
+
+  .top-attractions h2 {
+    font-size: 24px;
+  }
+
+  .images-container {
+    padding: 15px;
+  }
+
+  .images-container .item {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .images-container .item div {
+    align-items: center;
+  }
+
+  .images-container img {
+    width: 80px;
+  }
+
+  .top-tours h2 {
+    font-size: 24px;
+  }
+
+  .top-tours .container {
+    padding: 15px;
+  }
+
+  .top-tours .container .item img {
+    width: 250px;
+  }
+
+  .Free-cancellation {
+    padding: 40px 20px;
+  }
+
+  .Free-cancellation h2 {
+    font-size: 22px;
+  }
+
+  .Free-cancellation p {
+    font-size: 14px;
+  }
+
+  .Free-cancellation p br {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .search input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .images div {
+    height: 100px;
+  }
+
+  .top-tours .container .item img {
+    width: 220px;
+  }
 }

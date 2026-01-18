@@ -1,104 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viator</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <nav class="navigation" aria-label="Main navigation">
+        <div class="bar">
+          <div class="logo">
+            <img src="Viator_logo.png" alt="Viator company logo" />
+            <p class="soussrc">a Tripadvisor company</p>
+          </div>
 
-<header>
-  <nav class="navigation" aria-label="Main navigation">
+          <label for="discover" class="visually-hidden"></label>
+          <select id="discover" class="discover">
+            <option disabled selected>Discover</option>
+          </select>
+        </div>
 
-    <div class="bar">
-      <div class="logo">
-        <img src="Viator_logo.png" alt="Viator company logo">
-        <p class="soussrc">a Tripadvisor company</p>
+        <div class="icons">
+          <button aria-label="Change language">
+            <img src="icon-languag.webp" alt="" />
+          </button>
+
+          <button aria-label="Rewards">
+            <img src="rewards-icon.webp" alt="" />
+          </button>
+
+          <button aria-label="User profile">
+            <img src="user_icon.webp" alt="" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="slide" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Do more with Viator</h1>
+          <p>Plan better with 300,000+ travel experiences.</p>
+        </div>
+
+        <form class="search" role="search">
+          <label for="where" class="visually-hidden">Destination</label>
+          <input id="where" type="text" placeholder="Where to?" />
+
+          <label for="when" class="visually-hidden">Date</label>
+          <input id="when" type="text" placeholder="When?" />
+
+          <button aria-label="Search experiences">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
+      </section>
+
+      <section class="why-viator" aria-labelledby="why-title">
+        <div class="cont">
+          <h2 id="why-title">Why book with Viator?</h2>
+
+          <div class="parties">
+            <article class="partie">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <h3>24/7 customer support</h3>
+              <p>No matter the time zone, we're here to help.</p>
+            </article>
+
+            <article class="partie">
+              <i class="fa-solid fa-parachute-box" aria-hidden="true"></i>
+              <h3>Earn rewards</h3>
+              <p>Explore, earn, redeem, and repeat.</p>
+            </article>
+
+            <article class="partie">
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
+              <h3>Millions of reviews</h3>
+              <p>Book with confidence.</p>
+            </article>
+
+            <article class="partie">
+              <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+              <h3>Plan your way</h3>
+              <p>Free cancellation & pay later.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="login-section">
+          <h1>Log in to manage bookings & Viator Rewards</h1>
+          <p>Don't have an account yet? <span>Sign up</span></p>
+          <button>Log in</button>
+        </div>
+
+        <div class="end-section">
+          <p>Why you are seeing these recommendations</p>
+        </div>
+      </section>
+
+      <section class="top-destinations">
+        <h1>Top Destinations</h1>
+        <div class="images">
+          <div class="image1">
+            <p>Las Vegas</p>
+          </div>
+          <div class="image2">
+            <p>Rome</p>
+          </div>
+          <div class="image3">
+            <p>Paris</p>
+          </div>
+          <div class="image4">
+            <p>London</p>
+          </div>
+          <div class="image5">
+            <p>New York City</p>
+          </div>
+          <div class="image6">
+            <p>Washington DC</p>
+          </div>
+          <div class="image7">
+            <p>Cancun</p>
+          </div>
+          <div class="image8">
+            <p>Florence</p>
+          </div>
+          <div class="image9">
+            <p>Barcelona</p>
+          </div>
+          <div class="image10">
+            <p>Oahu</p>
+          </div>
+        </div>
+      </section>
+      <div class="keep-think">
+        <h2>Keep things flexible</h2>
+        <p>
+          Use Reserve Now & Pay Later to secure the <br />
+          activities you don't want to miss without being <br />
+          locked in.
+        </p>
       </div>
 
-      <label for="discover" class="visually-hidden">Discover menu</label>
-      <select id="discover" class="discover">
-        <option disabled selected>Discover</option>
-      </select>
-    </div>
+      <section class="top-attractions">
+        <h2>Top Attractions</h2>
+        <div class="images-container">
+          <div class="item">
+            <img src="/brief1Photo/caption1.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption2.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption3.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption4.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption5.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption6.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption7.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption8.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/brief1Photo/caption9.jpg" alt="" />
+            <div>
+              <h4>Colosseum</h4>
+              <p>1,916 Tours and activities</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="icons">
-      <button aria-label="Change language">
-        <img src="icon-languag.webp" alt="">
-      </button>
-
-      <button aria-label="Rewards">
-        <img src="rewards-icon.webp" alt="">
-      </button>
-
-      <button aria-label="User profile">
-        <img src="user_icon.webp" alt="">
-      </button>
-    </div>
-
-  </nav>
-</header>
-
-<main>
-
-  <section class="slide" aria-labelledby="hero-title">
-    <div class="container">
-      <h1 id="hero-title">Do more with Viator</h1>
-      <p>Plan better with 300,000+ travel experiences.</p>
-    </div>
-
-    <form class="search" role="search">
-      <label for="where" class="visually-hidden">Destination</label>
-      <input id="where" type="text" placeholder="Where to?" />
-
-      <label for="when" class="visually-hidden">Date</label>
-      <input id="when" type="text" placeholder="When?" />
-
-      <button aria-label="Search experiences">
-        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-      </button>
-    </form>
-  </section>
-
-  <section class="why-viator" aria-labelledby="why-title">
-    <div class="cont">
-      <h2 id="why-title">Why book with Viator?</h2>
-
-      <div class="parties">
-
-        <article class="partie">
-          <i class="fa-solid fa-phone" aria-hidden="true"></i>
-          <h3>24/7 customer support</h3>
-          <p>No matter the time zone, we're here to help.</p>
-        </article>
-
-        <article class="partie">
-          <i class="fa-solid fa-parachute-box" aria-hidden="true"></i>
-          <h3>Earn rewards</h3>
-          <p>Explore, earn, redeem, and repeat.</p>
-        </article>
-
-        <article class="partie">
-          <i class="fa-regular fa-star" aria-hidden="true"></i>
-          <h3>Millions of reviews</h3>
-          <p>Book with confidence.</p>
-        </article>
-
-        <article class="partie">
-          <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
-          <h3>Plan your way</h3>
-          <p>Free cancellation & pay later.</p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-</main>
-
-</body>
+      <section class="top-tours">
+        <h2>Top Tours</h2>
+        <div class="container">
+          <div class="item">
+            <div class="tag">🤍</div>
+            <img src="/brief1Photo/top-tours.jpg" alt="" />
+            <div class="text">
+              <p>🌐 Cancun , Riviera Maya & The Yucatan</p>
+              <p>⭐ 4.5 (135)</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>from 39$</p>
+              <p>Price varies by group size</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tag">🤍</div>
+            <img src="/brief1Photo/top-tours.jpg" alt="" />
+            <div class="text">
+              <p>🌐 Cancun , Riviera Maya & The Yucatan</p>
+              <p>⭐ 4.5 (135)</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>from 39$</p>
+              <p>Price varies by group size</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tag">🤍</div>
+            <img src="/brief1Photo/top-tours.jpg" alt="" />
+            <div class="text">
+              <p>🌐 Cancun , Riviera Maya & The Yucatan</p>
+              <p>⭐ 4.5 (135)</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>from 39$</p>
+              <p>Price varies by group size</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tag">🤍</div>
+            <img src="/brief1Photo/top-tours.jpg" alt="" />
+            <div class="text">
+              <p>🌐 Cancun , Riviera Maya & The Yucatan</p>
+              <p>⭐ 4.5 (135)</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>from 39$</p>
+              <p>Price varies by group size</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tag">🤍</div>
+            <img src="/brief1Photo/top-tours.jpg" alt="" />
+            <div class="text">
+              <p>🌐 Cancun , Riviera Maya & The Yucatan</p>
+              <p>⭐ 4.5 (135)</p>
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>from 39$</p>
+              <p>Price varies by group size</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Free-cancellation">
+        <h2>Free-cancellation</h2>
+        <p>
+          You'll receive a full refund if you cancel at least 24 <br />
+          hours in advance of most experiences.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
